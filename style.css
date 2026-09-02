@@ -26,13 +26,10 @@ object-fit: contain;
 
 }
 .ul-navbar{
-position: absolute;
-left: 50%;
-transform: translateX(-50%);
 display: flex;
 list-style: none;
 align-items: center;
-margin:0 ;
+margin:10px 0 0 0 ;
 padding: 0;
 gap: 30px;
 }
