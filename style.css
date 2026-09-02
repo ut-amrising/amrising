@@ -12,10 +12,8 @@ body {
 
 .container-navbar {
     background-color: gold;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-   padding: 4px 30px;
+   padding: 10px 30px;
   
 }
 
