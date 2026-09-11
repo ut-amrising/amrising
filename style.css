@@ -27,9 +27,13 @@ justify-content: center;
 align-items: center;
 }
 
-.container-navbar{
-    @media screen and (max-width: 768px){
+@media screen and (max-width: 768px){
+    .container-navbar{
+        padding: 10px 15px;
     }
+    }
+
+.container-navbar{
     background-color: gold;
     padding: 10px 20px;
     display: flex; /* TAMBAH */
