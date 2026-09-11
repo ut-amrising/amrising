@@ -1,0 +1,366 @@
+*,
+html{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f6ee;  
+    margin: 0;
+    padding: 0;
+    font-family: Arial,sans-serif;
+}
+
+.li-navbar:hover {
+background-color: white;
+}
+
+.li-navbar:active{
+    background-color: #d4af37;
+    transform:scale(0.95);
+    box-shadow: inset 0 3px 5px rgba(0,0,0,0.2);
+}
+.container-content{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.container-navbar{
+    @media screen and (max-width: 768px){
+    }
+    background-color: gold;
+    padding: 15px 40px;
+    display: flex; /* TAMBAH */
+    flex-direction: column; /* TAMBAH biar turun */
+    align-items: center; /* TAMBAH biar semua ke tengah */
+    gap: 12px; /* TAMBAH jarak baris 1 ke baris 2 */
+    flex-wrap: wrap;
+}
+
+.navbar-top{
+    display: flex;
+    flex-direction: column; /* TAMBAH logo di atas menu */
+    align-items: center; /* GANTI dari space-between ke center */
+    gap: 10px; /* TAMBAH jarak logo ke menu */
+}
+
+.ul-navbar{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.li-navbar a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.img-content{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: 40px;
+    top: 15px;
+}
+
+.navbar-sosmed{
+    display: flex;
+    justify-content: center; /* sosmed tengah */
+    gap: 18px;
+}
+
+.icon-sosmed{
+    width: 28px;
+    height: 28px;
+}
+
+
+.img-content{
+    width: 60px;
+}
+
+/* BARIS 2: SOSMED */
+.navbar-sosmed{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.icon-sosmed{
+    width: 28px;
+    height: 28px;
+    transition: 0.3s;
+}
+.icon-sosmed:hover{
+    transform: scale(1.2);
+}
+
+/* HP */
+@media (max-width: 768px) {
+    .navbar-top{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.section-about{
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.section-about h2{
+text-align: center;
+font-size: 50px;
+margin-bottom: 30px;
+background-color: rgb(202, 247, 247);
+padding: 15px 30px;
+border-radius: 20px;
+display: inline-block;
+margin: auto 30px auto;
+}
+
+.tim-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.item-tim{
+    width: 250px;
+    text-align: center;
+    margin: 0;
+}
+
+.item-tim img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item-tim figcaption{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.container-footer{
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.h2-footer{
+    text-align: center;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.ul-footer{
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: auto;
+}
+
+.li-footer{
+    text-align: center;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.container-footer>ul{
+    text-align: center;
+}
+
+/* ===== KHUS MISI VERSI 2 ===== */
+.misi-box {
+    width: 70%;              /* bikin lebih sempit biar keliatan di tengah */
+    margin: 0 auto;          /* box nya ke tengah halaman */
+    text-align: center;       /* semua isi di dalamnya rata kanan */
+}
+
+.misi-box .h2-footer {
+    text-align: center;       /* judul MISI ikut rata kanan */
+    margin-bottom: 15px;
+}
+
+.misi-box .ul-footer2 {
+    text-align: left;       /* isi MISI rata kanan */
+    list-style: none;        /* hapus titik */
+    padding-right: 10px;
+}
+
+.misi-box .li-footer2 {
+    text-align: left;       /* tiap poin rata kanan */
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+}
+.container-galery{
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.judul-galery{
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.galery-container{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.galery-container img{
+    width: 75%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto 8px auto;
+    display: block;
+}
+
+.galery-container figcaption{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.item-galery{
+    width: 45px;
+    min-width: 300px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgb(0, 0, 0.15);
+}
+
+.item-galery img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.item-galery p{
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.foto-lain-box{ position: relative;
+ }
+    .prev, .next{
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        background:rgba(0,0,0,0.5);
+        color: white;
+        font-size: 24px;
+        padding: 16px;
+        cursor: pointer;
+    }
+    
+.slides{
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide{
+    width: 100%;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.slide img{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+.slide{display: none;}
+
+.slide:first-child{display: block;}
+
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    z-index: 10;
+}
+.prev{ left: 10px; }
+.next{ right: 10px; }
+
+
+.section-article{
+    padding: 60px 20px; /* jarak atas bawah luar */
+    background: #f8f9fa;
+}
+
+.container-artikel{
+    max-width: 900px;  /* biar ga kepanjangan ke kanan */
+    margin: 0 auto;    /* biar ketengah */
+    padding: 40px;     /* jarak dalam box putih */
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    hyphens: auto;
+}
+
+.container-artikel p{
+    font-size: 16px;
+    line-height: 2.0;      /* INI PENTING: jarak antar baris. 2.0 = agak longgar */
+    margin-bottom: 30px;   /* INI PENTING: jarak antar paragraf */
+    text-indent: 0px;     /* menjorok di awal paragraf kayak di Word */
+    text-align: left; 
+    text-justify: inter-word;  /* rata kanan kiri */
+}
+
+.container-artikel h3{
+    text-align: center;
+    margin-top: 60px;      /* jarak atas judul */
+    margin-bottom: 50px;   /* jarak bawah judul */
+    font-size: 22px;
+}
+
+.container-artikel i{
+    display: block;        /* biar kutipan turun ke bawah sendiri */
+    text-align: left;
+    margin: 20px 0;        /* jarak atas bawah kutipan */
+    font-size: 15px;
+}
+.section-article h2{
+    background-color: rgb(202, 247, 247);
+    background:  #d6f4f9;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 100px; /* jarak 40px ke paragraf bawahnya */
+}
