@@ -25,6 +25,7 @@ align-items: center;
     flex-direction: column; /* TAMBAH biar turun */
     align-items: center; /* TAMBAH biar semua ke tengah */
     gap: 12px; /* TAMBAH jarak baris 1 ke baris 2 */
+    flex-wrap: wrap;
 }
 
 .navbar-top{
@@ -318,6 +319,7 @@ margin: auto 30px auto;
     background: white;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    hyphens: auto;
 }
 
 .container-artikel p{
@@ -325,7 +327,8 @@ margin: auto 30px auto;
     line-height: 2.0;      /* INI PENTING: jarak antar baris. 2.0 = agak longgar */
     margin-bottom: 25px;   /* INI PENTING: jarak antar paragraf */
     text-indent: 40px;     /* menjorok di awal paragraf kayak di Word */
-    text-align: justify;   /* rata kanan kiri */
+    text-align: justify; 
+    text-justify: inter-word;  /* rata kanan kiri */
 }
 
 .container-artikel h3{
