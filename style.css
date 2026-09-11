@@ -31,7 +31,7 @@ align-items: center;
     @media screen and (max-width: 768px){
     }
     background-color: gold;
-    padding: 15px 20px;
+    padding: 10px 20px;
     display: flex; /* TAMBAH */
     flex-direction: column; /* TAMBAH biar turun */
     align-items: center; /* TAMBAH biar semua ke tengah */
